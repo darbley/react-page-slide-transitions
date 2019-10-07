@@ -1,6 +1,6 @@
 import React from 'react';
 import './assets/scss/styles.scss';
-import { BrowserRouter as Router, Route,  Link, Switch, Redirect, withRouter, NavLink  } from "react-router-dom";
+import { Route, Switch, withRouter  } from "react-router-dom";
 import {TransitionGroup, CSSTransition } from 'react-transition-group';
 import Header from './components/Header';
 import Home from './pages/Home';
@@ -64,7 +64,7 @@ class App extends React.Component {
     }
 
     setPage = (pathname) => {
-        //console.log('Switch ',pathname);
+        // SET PAGE FOR CSS CLASSES
         let page = null;
         switch (pathname){
             case('/'):
