@@ -1,0 +1,94 @@
+html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+*
+{
+    margin:0px;
+    padding:0px;
+}
+
+// Make 100% height of browser window
+body, #root {
+    height: 100%;
+}
+
+// General wrapper for site
+.wrapper{
+    display: block;
+    height: 100%;
+    //overflow: hidden;
+}
+// General content container
+.container {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 1024px; 
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content {
+    display: block;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    text-align: center;
+}
+
+.page-wrap {
+    text-align: left;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p{
+    margin: 1rem auto;
+    text-align: left;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    padding-top: 20px;
+
+    a.logo {
+        display: inline-block;
+        color: #ffffff;
+        padding: 2px;
+    }
+
+    .content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul {
+        display: block;
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+
+            a {
+                color: #ffffff;
+                padding: 2px;
+                transition: border 0.5s ease-in-out;
+                text-decoration: none;
+
+                &:hover{
+                    border-bottom: 2px solid #ffffff;
+                }
+            }
+        }
+    }
+}
